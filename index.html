@@ -290,6 +290,298 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
+                <a class="post-title-link" href="/undefined/undefined/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-20T17:52:58+08:00">
+                2019-08-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>博客搭建</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文旨在教大家从0基础开始搭建自己的博客，博客相当于搭建在github上，所以不需要租用服务器或者域名，需要的也可以自己购买配置。本文教程仅适用于Windows版本。<br>有遗漏或者错误的地方欢迎发邮箱给我指正。<br>有什么不懂的可以问我，不过我也有可能不会，大家一起学习探讨。</p>
+<h2 id="下载Node"><a href="#下载Node" class="headerlink" title="下载Node"></a>下载Node</h2><p>进入网址：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a> 下载Node，选择自己电脑适配的版本。<br>此处我选择的是Windows Installer(.msi) 64-bit。</p>
+<p><img src="https://img-blog.csdnimg.cn/20190820145224758.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt></p>
+<p><img src="https://img-blog.csdnimg.cn/20190820145254644.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="安装NODE"><br>一路next安装下去<br><img src="https://img-blog.csdnimg.cn/20190820145349316.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>最后finish，就安装成功了。</p>
+<h2 id="下载git"><a href="#下载git" class="headerlink" title="下载git"></a>下载git</h2><p>网址：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a>         复制粘贴到浏览器就会自动下载<br><img src="https://img-blog.csdnimg.cn/20190820145511943.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20190820145634806.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>继续next<br><img src="https://img-blog.csdnimg.cn/20190820145650165.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>finish 就完成哒</p>
+<p>最后我们还是检查一下是否安装好了<br>wiondow+R 打开cmd<br><img src="https://img-blog.csdnimg.cn/20190820151110413.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>输入以下命令 如果出现版本号就说明安装好了</p>
+<blockquote>
+<p>git –version<br>node –version</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20190820151201845.png" alt="在这里插入图片描述"><br>这样说明已经安装好了 </p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>安装前找一个你喜欢的目录（随意），我选的是E盘。在E盘内新建文件夹Text（名称自取 英文），然后右键点击此文件夹，点击“GIT Bash Here”<br><img src="https://img-blog.csdnimg.cn/20190820155123212.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>依次输入两个命令，下载hexo以及安装hexo对于git的部署工具。</p>
+<blockquote>
+<p>npm install hexo-cli -g<br>npm install hexo-deployer-git –save</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20190820154104781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>没有问题的话，我们打开Text ，右键点击Hexo ，点击“GIT Bash Here”<br>然后输入</p>
+<blockquote>
+<p>hexo init</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20190820154408207.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>这个过程会很慢，耐心等待。</p>
+<p><img src="https://img-blog.csdnimg.cn/20190820154516502.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>最后出现 INFO Start blogging with Hexo!就说明成功了，如果没有可以重新执行一遍。</p>
+<h2 id="在本地查看"><a href="#在本地查看" class="headerlink" title="在本地查看"></a>在本地查看</h2><p>输入以下命令，有报错先检查上面的步骤是否正确。</p>
+<blockquote>
+<p>hexo generate<br>hexo server</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/2019082016114581.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"> </p>
+<p>出现最后一行“INFO Hexo is running at <a href="http://localhost4000" target="_blank" rel="noopener">http://localhost4000</a>. Press ctrl-c to stop”。就说明可以本地博客搭建成功啦，在浏览器输入：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 就可以在本地查看了。</p>
+<p><img src="https://img-blog.csdnimg.cn/20190820161632106.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt><br>大概就是这个样子了。但是这时候还只是在本地，只有自己的电脑才能查看，我们还要部署到github上，别人才能看到。</p>
+<h2 id="创建存储库"><a href="#创建存储库" class="headerlink" title="创建存储库"></a>创建存储库</h2><p>这一步需要自己注册一个github的账号，参考教程网上很多，自行百度。<br><img src="https://img-blog.csdnimg.cn/20190820163025773.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击右上角的+ 号”New repository“ 创建新的存储库。<br><img src="https://img-blog.csdnimg.cn/20190820163450743.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>存储库的名字最好和用户名一样，我之前就是没弄成一样在最后一步一直报错，最后改了个名字就行了。<br>还有红圈处要勾上。</p>
+<h2 id="SSH-Key"><a href="#SSH-Key" class="headerlink" title="SSH Key"></a>SSH Key</h2><p> 在/Text/Hexo 右键”GIT Bash Here“ 输入</p>
+<blockquote>
+<p>ssh-keygen -t rsa -C “你的邮箱”</p>
+</blockquote>
+<p> 一路回车就行了，最后会出现一个图表一样的东西（如图）。</p>
+<p><img src="https://img-blog.csdnimg.cn/20190820164310822.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p> 然后在C盘的用户目录里找到 .ssh 文件夹，右键用记事本或Notepad++ 打开（推荐Notepad++，记事本有时候会乱码），ctrl+a全选，再复制。<br> <img src="https://img-blog.csdnimg.cn/20190820173319731.png" alt="在这里插入图片描述"></p>
+<p>回到github网站，点击右上角<br><img src="https://img-blog.csdnimg.cn/20190820173652303.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击setting<br><img src="https://img-blog.csdnimg.cn/20190820173704696.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击SSH and GPG keys<br><img src="https://img-blog.csdnimg.cn/20190820173910790.png" alt="在这里插入图片描述"><br>再点击红圈这个 New SSH key</p>
+<p><img src="https://img-blog.csdnimg.cn/20190820174038783.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjEzODA4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>这里的title 可以随便取个名字，把刚刚复制的内容粘贴到 Key 的框框里。</p>
+<h1 id="测试？"><a href="#测试？" class="headerlink" title="测试？"></a>测试？</h1><p>输入命令</p>
+<blockquote>
+<p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/2019082017431326.png" alt="在这里插入图片描述"><br>输入 ==yes== 后回车<br><img src="https://img-blog.csdnimg.cn/20190820174535560.png" alt="在这里插入图片描述"></p>
+<p>最后会出现一句话：Hi your name.You’re successfully…………………..   就说明设置OK了。</p>
+<h1 id="配置个人信息"><a href="#配置个人信息" class="headerlink" title="配置个人信息"></a>配置个人信息</h1><p>输入命令</p>
+<blockquote>
+<p>git config –global user.name “github用户名”<br>git config –global user.email  “注册邮箱”</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/undefined/undefined/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="一只朵朵妹">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/duomei.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一只朵朵妹的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/undefined/undefined/" itemprop="url">hexo+github搭建你的个人博客(超详细教程)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-20T11:19:39+08:00">
+                2019-08-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>本文旨在教大家从ta0基础搭建自己的博客，博客相当于搭建在github的上，所以不需要租用服务器或者域名，需要的也可以自己购买配置。
+有什么不懂的可以发邮件问我，不过我也有可能不会，大家一起学习探讨</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/undefined/undefined/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="一只朵朵妹">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/duomei.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一只朵朵妹的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
                 <a class="post-title-link" href="/undefined/undefined/" itemprop="url">Hello World</a></h1>
         
 
@@ -438,7 +730,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -446,6 +738,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
