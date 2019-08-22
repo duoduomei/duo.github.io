@@ -373,15 +373,15 @@
 </blockquote>
 <p><img src="/undefined/undefined/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190820161110.png" alt="在这里插入图片描述"> </p>
 <p>出现最后一行“INFO Hexo is running at <a href="http://localhost4000" target="_blank" rel="noopener">http://localhost4000</a>. Press ctrl-c to stop”。就说明可以本地博客搭建成功啦，在浏览器输入：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 就可以在本地查看了。</p>
-<p><img src="/undefined/undefined/PJLWLG~Y86JUSVM%%7B_%1U%B.png" alt><br>大概就是这个样子了。但是这时候还只是在本地，只有自己的电脑才能查看，我们还要部署到github上，别人才能看到。</p>
-<h1 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h1><h2 id="创建存储库"><a href="#创建存储库" class="headerlink" title="创建存储库"></a>创建存储库</h2><p>这一步需要自己注册一个github的账号，参考教程网上很多，自行百度，用户名取得简单一点，因为可能会是你的网址的一部分。<br><img src="/undefined/undefined/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190820163014.png" alt="在这里插入图片描述"><br>点击右上角的+ 号”New repository“ 创建新的存储库。<br><img src="/undefined/undefined/%60%FFNGYII_97%7D6A1%O(SPQ6.png" alt="在这里插入图片描述"><br>如图，存储库的名字格式：你的用户名.github.io<br>比如说我的用户名是duoduomei，我的Repository name就要在后面填：duoduomei.github.io</p>
+<p><img src="/undefined/undefined/aaa.png" alt><br>大概就是这个样子了。但是这时候还只是在本地，只有自己的电脑才能查看，我们还要部署到github上，别人才能看到。</p>
+<h1 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h1><h2 id="创建存储库"><a href="#创建存储库" class="headerlink" title="创建存储库"></a>创建存储库</h2><p>这一步需要自己注册一个github的账号，参考教程网上很多，自行百度，用户名取得简单一点，因为可能会是你的网址的一部分。<br><img src="/undefined/undefined/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190820163014.png" alt="在这里插入图片描述"><br>点击右上角的+ 号”New repository“ 创建新的存储库。<br><img src="/undefined/undefined/abab.png" alt="在这里插入图片描述"><br>如图，存储库的名字格式：你的用户名.github.io<br>比如说我的用户名是duoduomei，我的Repository name就要在后面填：duoduomei.github.io</p>
 <h2 id="配置SSH-Key"><a href="#配置SSH-Key" class="headerlink" title="配置SSH Key"></a>配置SSH Key</h2><p> 在/Text/Hexo 右键”GIT Bash Here“ 输入</p>
 <blockquote>
 <p>ssh-keygen -t rsa -C “你的邮箱”</p>
 </blockquote>
 <p> 一路回车就行了，最后会出现一个图表一样的东西（如图）。</p>
 <p><img src="/undefined/undefined/QQ%E5%9B%BE%E7%89%8720190820164250.png" alt="在这里插入图片描述"></p>
-<p> 在C盘的用户目录里找到 .ssh 文件夹，点开<br> 右键用记事本或Notepad++ 打开id_rsa.pub文件（推荐Notepad++，记事本有时候会乱码）<br> ctrl+a全选，复制<br> <img src="/undefined/undefined/T8I7" alt="在这里插入图片描述">)F3]RMJJXQ$[`A$@2O.png)</p>
+<p> 在C盘的用户目录里找到 .ssh 文件夹，点开<br> 右键用记事本或Notepad++ 打开id_rsa.pub文件（推荐Notepad++，记事本有时候会乱码）<br> ctrl+a全选，复制<br> <img src="/undefined/undefined/qq.png" alt="在这里插入图片描述"></p>
 <p>回到github网站，点击右上角<br><img src="/undefined/undefined/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190820173603.png" alt="在这里插入图片描述"><br>点击setting<br><img src="/undefined/undefined/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190820173610.png" alt="在这里插入图片描述"><br>点击SSH and GPG keys<br><img src="/undefined/undefined/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190820173856.png" alt="在这里插入图片描述"><br>点击红圈这个 New SSH key</p>
 <p><img src="/undefined/undefined/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190820174018.png" alt="在这里插入图片描述"></p>
 <p>这里的title 可以随便取个名字，把刚刚复制的内容粘贴到 下面这个 Key 的框框里。</p>
